@@ -2,7 +2,9 @@
 
 <% @lists.each do |list| %>
 
-  <p><%= list.title %></p>
-  <span><%= list.body %></span>
+  <h2>タイトル</h2>
+  <span>
+    <%= link_to list.title, list_path(list.id) %>
+  </span>
   
 <% end %>
